@@ -1,0 +1,11 @@
+<!-- header.component.html -->
+<mat-toolbar color="primary">
+  <span>User Dashboard</span>
+  <span class="spacer"></span>
+  <div class="search-bar-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Search User</mat-label>
+      <input matInput [(ngModel)]="searchValue" (keyup.enter)="onSearch()">
+    </mat-form-field>
+  </div>
+</mat-toolbar>

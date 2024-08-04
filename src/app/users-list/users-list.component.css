@@ -1,0 +1,57 @@
+/* users-list.component.css */
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* Add space between header and users list */
+}
+
+mat-card {
+  max-width: 500px; /* Increase the width of the card */
+  width: 100%; /* Ensure it takes full available width */
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  color: white; /* Ensure text is readable on dark background */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.user-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 100px; /* Adjust the size of the avatar if needed */
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px; /* Increase the space between the avatar and the text */
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-details h3 {
+  color: white; /* Set the user name color to white for better contrast */
+  margin: 0; /* Remove default margin */
+  font-size: 1.2em; /* Adjust font size if needed */
+}
+
+mat-card-content {
+  text-align: left;
+}
+
+.mat-paginator {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  color: rgb(16, 16, 16); /* Ensure text is readable on dark background */
+}
+
+.mat-paginator .mat-button, .mat-paginator .mat-select-value {
+  color: white; /* Set the paginator controls text color to white */
+}

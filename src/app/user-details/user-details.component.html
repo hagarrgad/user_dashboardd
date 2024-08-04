@@ -1,0 +1,17 @@
+<ng-container *ngIf="isLoading; else userDetails">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-container>
+<ng-template #userDetails>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ user.first_name }} {{ user.last_name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="user.avatar" alt="{{ user.first_name }}">
+    <mat-card-content>
+      <p>Email: {{ user.email }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="goBack()">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-template>
